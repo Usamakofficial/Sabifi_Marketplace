@@ -12,7 +12,7 @@ import { mintNFT } from '../Blockchain.Services'
 const auth =
   'Basic ' +
   Buffer.from(
-    "2Gg95YqQ672apEtGQbewfwGQANc" + ':' + "b2c85789868e83772bfbc59ddd6d09bb",
+    "2IGcao3DIt2K5C7qHgm1vWaIU5C" + ':' + "157b5d7cd67aeb879249aa79a5b1a543",
   ).toString('base64')
 
 const client = create({
