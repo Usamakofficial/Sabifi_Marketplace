@@ -32,8 +32,13 @@ const About = () => {
               Our team of finance & Technology experts have joined hands <br />{" "}
               to turn your simple wallets into crypto wallets through SABIFI.
             </p>
+          <button className="lg:w-4/2 text-indigo-800 bg-white font-bold px-5 text-xl mt-5 py-5 focus:outline-none hover:bg-blue-700 rounded hover:text-white">
+              <a href="https://pk.linkedin.com/in/muhammad-wahhab-mirza-b8665551" target='_blank'>Find More...</a>
+            </button>
           </div>
+          
         </div>
+        
         <div
           className=" md:w-2/5 w-full 
     mt-10 md:mt-0"
@@ -60,7 +65,7 @@ const About = () => {
               governance, and scaling of the
               community..
             </p>
-            <button className='bg-indigo-800 mt-4 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full'>Contact us</button>
+            <button className='bg-indigo-800 mt-4 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full'><a href="https://www.linkedin.com/in/usama-anwar-16803521b">Contact us</a></button>
           </div>
           <div className="bg-white/10 p-8 rounded-xl mt-40">
             <img className='rounded-full h-60 mx-auto' src={mubashar} alt="" />
@@ -71,7 +76,7 @@ const About = () => {
               Science from the Punjab University
               College of Information Technology
             </p>
-            <button className='bg-indigo-800 mt-4 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full'>Contact us</button>
+            <button className='bg-indigo-800 mt-4 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full'><a href="https://www.linkedin.com/in/mubashar-islam-342483147/">Contact us</a></button>
           </div>
           <div className="bg-white/10 p-8 rounded-xl mt-40">
             <img className='rounded-full h-60 mx-auto' src={ali} alt="" />
@@ -83,7 +88,7 @@ const About = () => {
               governance, and scaling of the
               community..
             </p>
-            <button className='bg-indigo-800 mt-4 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full'>Contact us</button>
+            <button className='bg-indigo-800 mt-4 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full'><a href="https://twitter.com/Muhamma40533604?t=5LDtN5ExBSKJeTNXeGd8_g&s=09">Contact us</a></button>
           </div>
 
         </div>
