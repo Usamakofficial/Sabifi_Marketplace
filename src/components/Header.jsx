@@ -5,10 +5,12 @@ import { NavLink } from "react-router-dom";
 import Whitepaper from "./Whitepaper";
 import MenuIcon from "@mui/icons-material/Menu";
 import { useState } from "react";
+import CloseIcon from '@mui/icons-material/Close';
 
 const Header = () => {
   const [connectedAccount] = useGlobalState("connectedAccount");
   const [showIcons, setShowIcons] = useState(false);
+  const [crossIcon, setCrossIcon] = useState();
   return (
     <nav className="w-4/5 flex  justify-between items-center py-6 mx-auto">
       <div className="md:flex-[0.5] flex-initial">
@@ -18,7 +20,7 @@ const Header = () => {
           alt="Timeless Logo"
         />
       </div>
-      <div className={showIcons ? "menu-link  mobile-menu-link" : "menu-link"}>
+      <div className={showIcons ? "menu-link  mobile-menu-link" : "menu-link"} >
       <ul
         className="md:flex-[0.5] text-white md:flex
         hidden list-none flex-row justify-between pr-6
