@@ -1,5 +1,6 @@
 import Identicon from 'react-identicons'
 import { setGlobalState, useGlobalState, truncate } from '../store'
+import hero from '../assets/hero.png';
 
 const Hero = () => {
   const [connectedAccount] = useGlobalState('connectedAccount')
@@ -55,7 +56,7 @@ const Hero = () => {
       mt-10 md:mt-0 rounded-md overflow-hidden bg-gray-800 transform transition-all hover:translate-y-2 duration-300 hover:scale-[1.1]" 
       >
         <img
-          src="https://images.cointelegraph.com/images/1434_aHR0cHM6Ly9zMy5jb2ludGVsZWdyYXBoLmNvbS91cGxvYWRzLzIwMjEtMDYvNGE4NmNmOWQtODM2Mi00YmVhLThiMzctZDEyODAxNjUxZTE1LmpwZWc=.jpg"
+          src={hero}
           alt="NFT Art"
           className="h-60 w-full object-cover "
         />
