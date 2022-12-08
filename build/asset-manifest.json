@@ -1,13 +1,23 @@
 {
   "files": {
-    "main.css": "/static/css/main.f0e97913.css",
-    "main.js": "/static/js/main.cc3a99cc.js",
+    "main.css": "/static/css/main.1d1680d3.css",
+    "main.js": "/static/js/main.f3b10e21.js",
+    "static/media/Whitepaper.pdf": "/static/media/Whitepaper.a1c8546fe991a7130638.pdf",
+    "static/media/token_img.png": "/static/media/token_img.095c3d1b46dd3b2007a5.png",
+    "static/media/artboard.png": "/static/media/artboard.249739cffb7a028e44a7.png",
+    "static/media/boss.png": "/static/media/boss.2c4ff4c066da4ee8a640.png",
+    "static/media/policon.png": "/static/media/policon.1140771b39c8269a6d1b.png",
+    "static/media/usama.jpeg": "/static/media/usama.cf991373cb4ecb060ffb.jpeg",
+    "static/media/ali.jpg": "/static/media/ali.2cb993613a496e3d81ee.jpg",
+    "static/media/mubashar.jpg": "/static/media/mubashar.d7796aad5996b81737f4.jpg",
+    "static/media/sabifi.png": "/static/media/sabifi.98ebb4261ba07925d2e9.png",
+    "static/media/logicon.png": "/static/media/logicon.19ef933dc2b1722b6991.png",
     "index.html": "/index.html",
-    "main.f0e97913.css.map": "/static/css/main.f0e97913.css.map",
-    "main.cc3a99cc.js.map": "/static/js/main.cc3a99cc.js.map"
+    "main.1d1680d3.css.map": "/static/css/main.1d1680d3.css.map",
+    "main.f3b10e21.js.map": "/static/js/main.f3b10e21.js.map"
   },
   "entrypoints": [
-    "static/css/main.f0e97913.css",
-    "static/js/main.cc3a99cc.js"
+    "static/css/main.1d1680d3.css",
+    "static/js/main.f3b10e21.js"
   ]
 }
