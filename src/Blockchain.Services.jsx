@@ -27,7 +27,6 @@ const getEtheriumContract = async () => {
 
 const connectWallet = async () => {
   try {
-    if (!ethereum) return alert('Please install Metamask')
     const accounts = await ethereum.request({ method: 'eth_requestAccounts' })
     setGlobalState('connectedAccount', accounts[0].toLowerCase())
   } catch (error) {
@@ -37,7 +36,6 @@ const connectWallet = async () => {
 
 const isWallectConnected = async () => {
   try {
-    if (!ethereum) return alert('Please install Metamask')
     const accounts = await ethereum.request({ method: 'eth_accounts' })
 
     window.ethereum.on('chainChanged', (chainId) => {
@@ -75,7 +73,6 @@ const structuredNfts = (nfts) => {
 
 const getAllNFTs = async () => {
   try {
-    if (!ethereum) return alert('Please install Metamask')
 
     const contract = await getEtheriumContract()
     const nfts = await contract.methods.getAllNFTs().call()

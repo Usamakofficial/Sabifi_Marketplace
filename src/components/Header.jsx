@@ -11,13 +11,19 @@ const Header = () => {
   const [connectedAccount] = useGlobalState("connectedAccount");
   const [showIcons, setShowIcons] = useState(false);
   return (
-    <nav className="w-4/5 flex  justify-between items-center py-6 mx-auto">
+    <nav className="w-4/5 flex  justify-between items-center py-5 mx-auto">
       <div className="md:flex-[0.5] flex-initial">
-        <img
+         <NavLink
+          exact
+          activeClassName="active_class"
+          to="/"
+        >
+           <img
           className="w-40 cursor-pointer"
           src={timelessLogo}
           alt="Timeless Logo"
         />
+        </NavLink>
       </div>
       <div className={showIcons ? "menu-link  mobile-menu-link" : "menu-link"} >
       <ul
@@ -68,7 +74,7 @@ const Header = () => {
       {connectedAccount ? (
         <button
           className="shadow-xl text-white
-       bg-violet-700 hover:bg-[#bd255f] md:text-l p-3
+       bg-violet-700 hover:bg-blue-700 md:text-l p-3
           rounded-full cursor-pointer font-bold"
         >
           {truncate(connectedAccount, 4, 4, 11)}
@@ -76,7 +82,7 @@ const Header = () => {
       ) : (
         <button
           className="shadow-xl text-white
-        bg-violet-700 hover:bg-[#bd255f] md:text-xs p-3
+        bg-violet-700 hover:bg-blue-700 md:text-xs p-3
         font-bold
           rounded-full cursor-pointer"
           onClick={connectWallet}

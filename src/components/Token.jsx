@@ -13,7 +13,7 @@ const Token = () => {
         <h1 className=" text-5xl font-bold text-black  tracking-normal">
           SABIFI TOKEN
         </h1>
-        <hr class=" mx-auto w-64 w h-1 bg-gray-500 rounded border-0 md:my-4 dark:bg-gray-700"></hr>
+        <hr className=" mx-auto w-64 w h-1 bg-gray-500 rounded border-0 md:my-4 dark:bg-gray-700"></hr>
       </div>
       <div
         className="flex flex-col md:flex-row w-4/5 justify-between 
@@ -56,21 +56,21 @@ const Token = () => {
         </div>
         <div className=" md:w-2/5 w-full mt-10 md:mt-0">
         <div class="grid lg:flex-row justify-items-end mb-4 w-full">
-              <button class="bg-violet-700 inline-flex py-7 p-12 rounded-lg mb-14 items-center md:mt-4 mt-0 lg:mt-0 hover:bg-blue-500 focus:outline-none">
+              <button className="bg-violet-700 inline-flex py-7 p-12 rounded-lg mb-14 items-center md:mt-4 mt-0 lg:mt-0 hover:bg-blue-500 focus:outline-none">
                 <img className="object-cover caret-white w-8 -ml-5 mr-2" src={logicon} alt="" />
-                <span class="ml-4 flex  items-start flex-col leading-none">
-                  <span class="text-2xl font-semibold text-white"><a href="https://etherscan.io/address/0x1e6c985bd153045fc9a99f12eb5442fd4eaab915" target='_blank'>SABIFI on Etherscan</a>
+                <span className="ml-4 flex  items-start flex-col leading-none">
+                  <span className="text-2xl font-semibold text-white"><a href="https://etherscan.io/address/0x1e6c985bd153045fc9a99f12eb5442fd4eaab915" target='_blank'>SABIFI on Etherscan</a>
                   </span>
                 </span>
                 <a href="https://etherscan.io/address/0x1e6c985bd153045fc9a99f12eb5442fd4eaab915" target='_blank'><ArrowOutwardIcon className="hover:fill-indigo-900" style={{ color: "white", width: '6vw',
   height: '6vh' }}/></a>
               </button>
             </div>
-            <div class="grid lg:flex-row justify-items-end mb-4">
-              <button class="bg-violet-700 inline-flex py-8 p-7 mb-12 rounded-lg items-center md:mt-4 mt-0 lg:mt-0 hover:bg-blue-500 focus:outline-none">
+            <div className="grid lg:flex-row justify-items-end mb-4">
+              <button className="bg-violet-700 inline-flex py-8 p-7 mb-12 rounded-lg items-center md:mt-4 mt-0 lg:mt-0 hover:bg-blue-500 focus:outline-none">
                 <img className="object-cover w-8" src={policon} alt="" />
-                <span class="ml-4 flex items-start flex-col leading-none">
-                  <span class="text-2xl font-semibold text-white">
+                <span className="ml-4 flex items-start flex-col leading-none">
+                  <span className="text-2xl font-semibold text-white">
                   <a href="https://polygonscan.com/address/0x1E6c985BD153045FC9a99F12eb5442fD4EaAb915" target='_blank'>SABIFI on Polygonscan</a> 
                   </span>
                 </span>
@@ -78,18 +78,18 @@ const Token = () => {
   height: '6vh' }}/></a>
               </button>
             </div>
-            <div class="grid lg:flex-row justify-items-end mb-4">
-              <button class="bg-violet-700 inline-flex py-8 px-3 rounded-lg items-start lg:ml-4 md:ml-0 ml-4 md:mt-4 mt-0 lg:mt-0 hover:bg-blue-500 focus:outline-none">
+            <div className="grid lg:flex-row justify-items-end mb-4">
+              <button className="bg-violet-700 inline-flex py-8 px-3 rounded-lg items-start lg:ml-4 md:ml-0 ml-4 md:mt-4 mt-0 lg:mt-0 hover:bg-blue-500 focus:outline-none">
                 <img
                   className="object-cover w-8 items-start"
                   src={cmcicon}
                   alt="artboard"
                 />
-                <span class="ml-4 flex items-start flex-col leading-none">
-                  <span class="text-2xl font-semibold text-white ">
+                <span className="ml-4 flex items-start flex-col leading-none">
+                  <span className="text-2xl font-semibold text-white ">
                     SABIFI on Coinmarketcap
                   </span>
-                  <span class="text-xs font-medium text-white">
+                  <span className="text-xs font-medium text-white">
                     coming soon
                   </span>
                 </span>
