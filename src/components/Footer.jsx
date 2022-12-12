@@ -11,7 +11,7 @@ const Footer = () => (
 
       <div className="flex flex-1 w-full justify-evenly items-center flex-wrap sm:mt-0 mt-5">
       <ul
-        className="md:flex-[0.5] text-white md:flex
+        className="md:flex-[0.5] text-black md:flex
         hidden"
       >
         <NavLink exact activeClassName='active_class' to='/'className="mr-8 cursor-pointer font-bold
@@ -27,7 +27,7 @@ const Footer = () => (
       </div>
     </div>
     <div className="flex flex-[0.25] py-8 justify-center items-center">
-      <p className="text-white text-right text-xs">
+      <p className="text-gray-700 text-right text-xs">
         &copy;2022 All rights reserved
       </p>
     </div>

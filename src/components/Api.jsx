@@ -1,8 +1,13 @@
 import axios from "axios";
 import { ethers } from "ethers";
 import React from "react";
+import SouthIcon from "@mui/icons-material/South";
 import { useState } from "react";
 import * as Scroll from "react-scroll";
+import {
+  BsFillArrowDownCircleFill,
+  BsFillArrowUpRightCircleFill,
+} from "react-icons/bs";
 import {
   Link,
   Button,
@@ -14,15 +19,15 @@ import {
 } from "react-scroll";
 
 function Api() {
-  const [account, setAccount] = useState("");
+  // const [account, setAccount] = useState("");
   const [data, setData] = useState([]);
   console.log(data);
 
   const connect = async () => {
-    const provider = new ethers.providers.Web3Provider(window.ethereum);
-    let res = await provider.send("eth_requestAccounts", []);
-    setAccount(res[0]);
-    getData(res[0]);
+    // const provider = new ethers.providers.Web3Provider(window.ethereum);
+    // let res = await provider.send("eth_requestAccounts", []);
+    // setAccount(res[0]);
+    getData([0]);
   };
   const getData = () => {
     const options = {
@@ -50,22 +55,11 @@ function Api() {
 
   return (
     <>
-      <div className="flex justify-center pt-16">
-        <Link
-          className="test6"
-          to="anchor"
-          spy={true}
-          smooth={true}
-          duration={500}
-        >
-          <button
-            onClick={connect}
-            className="bg-[#e32970] hover:bg-[#bd255f] text-white font-bold py-4 text-xl tracking-widest px-16 rounded-full"
-          >
-            Our NFTs
-          </button>
-        </Link>
-      </div>
+      <div className='flex justify-center pt-24'>
+      <Link to="anchor" spy={true} smooth={true} duration={500} >
+      <button onClick={connect} className='bg-[#e32970] hover:bg-[#bd255f] text-white font-bold py-4 text-xl tracking-widest px-20 rounded-full'>Our NFTs</button>
+      </Link>
+    </div>
       <h4 className="text-white text-3xl  font-bold uppercase text-gradient ml-36 mt-12">
         {data.length > 0
           ? "Our Featured NFTs on OpenSea"
@@ -79,18 +73,18 @@ function Api() {
               <>
                 <div
                   id="anchor"
-                  className="w-full shadow-xl shadow-black rounded-md  bg-gray-800 my-2 p-3 transform 
+                  className="w-full shadow-xl rounded-md  bg-white my-2 p-3 transform 
                   transition-all hover:translate-y-2 duration-300 hover:scale-[1.1]"
                 >
                   <img
                     src={nft.image_thumbnail_url}
-                    className="h-86 w-full object-cover shadow-lg shadow-black rounded-lg mb-3 "
+                    className="h-86 w-full object-cover shadow-lg rounded-lg mb-3 "
                   />
-                  <h2 className="text-white font-bold mt-4 mb-3 w-28 overflow-hidden h-6 float-left">
+                  <h2 className="text-black font-bold mt-4 mb-3 w-28 overflow-hidden h-6 float-left">
                     {nft.name}
                   </h2>
                   <button
-                    className="shadow-lg shadow-black text-white text-sm bg-[#e32970]
+                    className="shadow-lg text-white text-sm bg-violet-700
                   hover:bg-[#bd255f] cursor-pointer rounded-full px-3 py-1 float-right  mt-4 mb-3"
                   >
                     <a href={nft.permalink} target="_blank">

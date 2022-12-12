@@ -12,19 +12,19 @@ const About = () => {
 <>
     <div className="container mx-auto ">
       
-      <div className="flex flex-col py-10 text-center w-full mb-14">
-        <h1 className=" text-5xl font-bold text-gray-300  tracking-wider">
+      <div className="flex flex-col py-2 text-center w-full">
+        <h1 className=" text-5xl font-bold text-black  tracking-wider">
           About Us
         </h1>
-        <hr class=" mx-auto w-48 h-1 bg-gray-100 rounded border-0 md:my-4 dark:bg-gray-700"></hr>
+        <hr class=" mx-auto w-48 h-1 bg-gray-500 rounded border-0 md:my-4 dark:bg-gray-700"></hr>
       </div>
       <div
         className="flex flex-col md:flex-row w-4/5 justify-between 
-    items-center mx-auto py-10"
+    items-center mx-auto py-5"
       >
         <div className="md:w-3/6 w-full">
           <div>
-            <h1 className="text-white text-6xl font-bold">
+            <h1 className="text-black text-6xl font-bold">
               <span>WAHHAB MIRZA</span> <br /> CEO, Founder <br />
               <span className="text-gradient">Of</span> SABIFI.
             </h1>
@@ -32,7 +32,7 @@ const About = () => {
               Our team of finance & Technology experts have joined hands <br />{" "}
               to turn your simple wallets into crypto wallets through SABIFI.
             </p>
-          <button className="lg:w-4/2 text-indigo-800 bg-white font-bold px-5 text-xl mt-5 py-5 focus:outline-none hover:bg-blue-700 rounded hover:text-white">
+          <button className="lg:w-4/2 text-white bg-violet-700 font-bold px-5 text-xl mt-5 py-5 focus:outline-none hover:bg-blue-700 rounded hover:text-white">
               <a href="https://pk.linkedin.com/in/muhammad-wahhab-mirza-b8665551" target='_blank'>Find More...</a>
             </button>
           </div>
@@ -46,49 +46,49 @@ const About = () => {
           <img src={ceo} alt="NFT Art" className=" h-auto w-full" />
         </div>
       </div>
-      <div className="flex flex-col py-10 text-center w-full -mb-32 mt-24">
-        <h1 className=" text-5xl font-bold text-gray-300  tracking-wider">
+      <div className="flex flex-col py-20 text-center w-full">
+        <h1 className=" text-5xl font-bold text-black  tracking-wider">
           Creators of Sabifi
         </h1>
-        <hr class=" mx-auto w-96 h-1 bg-gray-100 rounded border-0 md:my-4 dark:bg-gray-700"></hr>
+        <hr class=" mx-auto w-96 h-1 bg-gray-500 rounded border-0 md:my-4 dark:bg-gray-700"></hr>
       </div>
-      <div className='font-Poppins text-center text-white'>
+      <div className='font-Poppins text-center text-black'>
         <div className=" flex xl gap-20 flex-col md:flex-row w-4/5 justify-between 
     items-center mx-auto py-10">
-          <div className="bg-white/10 p-8 rounded-xl mt-40">
+          <div className="bg-white/10 p-8 rounded-xl">
             <img className='rounded-full h-60 mx-auto' src={usama} alt="" />
             <h4 className="upperclass text-xl font-bold mt-6">Usama Anwar</h4>
-            <p className='mt-4'>Mr. Usama Anwar is a well respected
+            <p className='mt-4 text-gray-700'>Mr. Usama Anwar is a well respected
               Blockchain developer and active investor
               in the DeFi. Mr. Usama will work closely
               with the Sabifi team on matters of
               governance, and scaling of the
               community..
             </p>
-            <button className='bg-indigo-800 mt-4 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full'><a href="https://www.linkedin.com/in/usama-anwar-16803521b">Contact us</a></button>
+            <button className='bg-violet-700 mt-4 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full'><a href="https://www.linkedin.com/in/usama-anwar-16803521b">Contact us</a></button>
           </div>
-          <div className="bg-white/10 p-8 rounded-xl mt-40">
+          <div className="bg-white/10 p-8 rounded-xl">
             <img className='rounded-full h-60 mx-auto' src={mubashar} alt="" />
             <h4 className="upperclass text-xl font-bold mt-6">Mubashar Islam</h4>
-            <p className='mt-4'>Mr. Mubashar Islam is a well respected
+            <p className='mt-4 text-gray-700'>Mr. Mubashar Islam is a well respected
               Blockchain developer and crypto advisor.
               Mr. Mubashar received MS in Computer
               Science from the Punjab University
               College of Information Technology
             </p>
-            <button className='bg-indigo-800 mt-4 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full'><a href="https://www.linkedin.com/in/mubashar-islam-342483147/">Contact us</a></button>
+            <button className='bg-violet-700 mt-4 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full'><a href="https://www.linkedin.com/in/mubashar-islam-342483147/">Contact us</a></button>
           </div>
-          <div className="bg-white/10 p-8 rounded-xl mt-40">
+          <div className="bg-white/10 p-8 rounded-xl">
             <img className='rounded-full h-60 mx-auto' src={ali} alt="" />
             <h4 className="upperclass text-xl font-bold mt-6">Muhammad Ali</h4>
-            <p className='mt-4'>Mr. Muhammad Ali is a well respected
+            <p className='mt-4 text-gray-700'>Mr. Muhammad Ali is a well respected
               web developer and active investor
               in the DeFi. Muhammad Ali will work closely
               with the Sabifi team on matters of
               governance, and scaling of the
               community..
             </p>
-            <button className='bg-indigo-800 mt-4 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full'><a href="https://twitter.com/Muhamma40533604?t=5LDtN5ExBSKJeTNXeGd8_g&s=09">Contact us</a></button>
+            <button className='bg-violet-700 mt-4 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full'><a href="https://twitter.com/Muhamma40533604?t=5LDtN5ExBSKJeTNXeGd8_g&s=09">Contact us</a></button>
           </div>
 
         </div>

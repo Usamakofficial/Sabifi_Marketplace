@@ -30,8 +30,8 @@ const Artworks = () => {
         {collection.length > 0 && nfts.length > collection.length ? (
           <div className="text-center my-5 " >
             <button
-              className="shadow-xl shadow-black text-white
-            bg-[#e32970] hover:bg-[#bd255f]
+              className="shadow-xl text-white
+            bg-violet-700 hover:bg-[#bd255f]
             rounded-full cursor-pointer p-2 font-semibold"
               onClick={() => setEnd(end + count)}
             >
@@ -50,22 +50,22 @@ const Card = ({ nft }) => {
   }
 
   return (
-    <div className="w-full shadow-xl shadow-black rounded-md overflow-hidden bg-gray-800 my-2 p-3 transform transition-all hover:translate-y-2 duration-300 hover:scale-[1.1]" >
+    <div className="w-full shadow-xl rounded-md overflow-hidden bg-white my-2 p-3 transform transition-all hover:translate-y-2 duration-300 hover:scale-[1.1]" >
       <img
         src={nft.metadataURI}
         alt={nft.title}
-        className="h-60 w-full object-cover shadow-lg shadow-black rounded-lg mb-3  " 
+        className="h-60 w-full object-cover shadow-lg rounded-lg mb-3  " 
       />
-      <h4 className="text-white font-semibold">{nft.title}</h4>
+      <h4 className="text-black font-semibold">{nft.title}</h4>
       <p className="text-gray-400 text-xs my-1">{nft.description}</p>
-      <div className="flex justify-between items-center mt-3 text-white">
+      <div className="flex justify-between items-center mt-3 text-gray-black">
         <div className="flex flex-col">
           <small className="text-xs">Current Price</small>
-          <p className="text-sm font-semibold">{nft.cost} ETH</p>
+          <p className="text-sm font-bold">{nft.cost} ETH</p>
         </div>
 
         <button
-          className="shadow-lg shadow-black text-white text-sm bg-[#e32970]
+          className="shadow-lg text-white text-sm bg-violet-700
             hover:bg-[#bd255f] cursor-pointer rounded-full px-1.5 py-1"
           onClick={setNFT}
         >

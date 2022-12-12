@@ -15,7 +15,7 @@ const Hero = () => {
     >
       <div className="md:w-3/6 w-full">
         <div>
-          <h1 className="text-white text-5xl font-bold">
+          <h1 className="text-gray-900 text-5xl font-bold">
             Buy and Sell <br /> Digital Arts, <br />
             <span className="text-gradient">NFTs</span> Collections
           </h1>
@@ -26,8 +26,8 @@ const Hero = () => {
 
         <div className="flex flex-row mt-5">
           <button
-            className="shadow-xl shadow-black text-white
-            bg-[#e32970] hover:bg-[#bd255f]
+            className="shadow-xl  text-white
+            bg-violet-700 hover:bg-[#bd255f]
             rounded-full cursor-pointer p-3 font-bold"
             onClick={onCreatedNFT}
           >
@@ -37,23 +37,23 @@ const Hero = () => {
 
         <div className="w-3/4 flex justify-between items-center mt-5">
           <div>
-            <p className="text-white font-bold">1231k</p>
-            <small className="text-gray-300">User</small>
+            <p className="text-black font-bold">1231k</p>
+            <small className="text-gray-400">User</small>
           </div>
           <div>
-            <p className="text-white font-bold">152k</p>
-            <small className="text-gray-300">Artwork</small>
+            <p className="text-black font-bold">152k</p>
+            <small className="text-gray-400">Artwork</small>
           </div>
           <div>
-            <p className="text-white font-bold">200k</p>
-            <small className="text-gray-300">Artist</small>
+            <p className="text-black font-bold">200k</p>
+            <small className="text-gray-400">Artist</small>
           </div>
         </div>
       </div>
 
       <div
-        className="shadow-xl shadow-black md:w-2/5 w-full 
-      mt-10 md:mt-0 rounded-md overflow-hidden bg-gray-800 transform transition-all hover:translate-y-2 duration-300 hover:scale-[1.1]" 
+        className="shadow-xl shadow-gray-400 md:w-2/5 w-full 
+      mt-10 md:mt-0 rounded-md overflow-hidden bg-white transform transition-all hover:translate-y-2 duration-300 hover:scale-[1.1]" 
       >
         <img
           src={hero}
@@ -67,7 +67,7 @@ const Hero = () => {
             className="h-10 w-10 object-contain rounded-full mr-3"
           />
           <div>
-            <p className="text-white font-semibold">
+            <p className="text-black font-semibold">
               {connectedAccount
                 ? truncate(connectedAccount, 4, 4, 11)
                 : 'Connect Your Wallet'}

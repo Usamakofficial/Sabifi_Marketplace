@@ -10,7 +10,6 @@ import CloseIcon from '@mui/icons-material/Close';
 const Header = () => {
   const [connectedAccount] = useGlobalState("connectedAccount");
   const [showIcons, setShowIcons] = useState(false);
-  const [crossIcon, setCrossIcon] = useState();
   return (
     <nav className="w-4/5 flex  justify-between items-center py-6 mx-auto">
       <div className="md:flex-[0.5] flex-initial">
@@ -22,7 +21,7 @@ const Header = () => {
       </div>
       <div className={showIcons ? "menu-link  mobile-menu-link" : "menu-link"} >
       <ul
-        className="md:flex-[0.5] text-white md:flex
+        className="md:flex-[0.5] text-black md:flex
         hidden list-none flex-row justify-between pr-6
         text-lg
         items-center flex-initial"
@@ -61,23 +60,23 @@ const Header = () => {
       </div>
       <div className="hamburger_icon text-white md:hidden px-6 ml-28 pl-16">
         <a href="#" onClick={()=>setShowIcons(!showIcons)}>
-      <MenuIcon/>
+      <MenuIcon className="text-violet-700 "/>
       </a>
       </div>
 
      
       {connectedAccount ? (
         <button
-          className="shadow-xl shadow-black text-white
-        bg-[#e32970] hover:bg-[#bd255f] md:text-l p-3
+          className="shadow-xl text-white
+       bg-violet-700 hover:bg-[#bd255f] md:text-l p-3
           rounded-full cursor-pointer font-bold"
         >
           {truncate(connectedAccount, 4, 4, 11)}
         </button>
       ) : (
         <button
-          className="shadow-xl shadow-black text-white
-        bg-[#e32970] hover:bg-[#bd255f] md:text-xs p-3
+          className="shadow-xl text-white
+        bg-violet-700 hover:bg-[#bd255f] md:text-xs p-3
         font-bold
           rounded-full cursor-pointer"
           onClick={connectWallet}
