@@ -10,6 +10,15 @@ import CloseIcon from '@mui/icons-material/Close';
 const Header = () => {
   const [connectedAccount] = useGlobalState("connectedAccount");
   const [showIcons, setShowIcons] = useState(false);
+  const [open, setOpen] = useState(false);
+  const handleClickAway = () => {
+    setOpen(false);
+    console.log("clicked away");
+  };
+  const handleClick = () => {
+    setOpen(!open);
+    console.log("clicked");
+  };
   return (
     <nav className="w-4/5 flex  justify-between items-center py-5 mx-auto">
       <div className="md:flex-[0.5] flex-initial">
@@ -25,7 +34,7 @@ const Header = () => {
         />
         </NavLink>
       </div>
-      <div className={showIcons ? "menu-link  mobile-menu-link" : "menu-link"} >
+      <div onClick={handleClickAway} className={open ? "menu-link  mobile-menu-link" : "menu-link"}>
       <ul
         className="md:flex-[0.5] text-black md:flex
         hidden list-none flex-row justify-between pr-6
@@ -36,7 +45,7 @@ const Header = () => {
           exact
           activeClassName="active_class"
           to="/"
-          className="mx-4 cursor-pointer  font-bold
+          className="mx-4 cursor-pointer font-bold
           "
         >
           Marketplace
@@ -64,7 +73,7 @@ const Header = () => {
         </div>
       </ul>
       </div>
-      <div className="hamburger_icon text-white md:hidden px-6 ml-28 pl-16">
+      <div onClick={handleClick} className=" hamburger_icon text-white md:hidden px-6 ml-28 pl-16">
         <a href="#" onClick={()=>setShowIcons(!showIcons)}>
       <MenuIcon className="text-violet-700 "/>
       </a>
