@@ -16,7 +16,7 @@ const About = () => {
         <h1 className=" text-5xl font-bold text-black  tracking-wider">
           About Us
         </h1>
-        <hr class=" mx-auto w-48 h-1 bg-gray-500 rounded border-0 md:my-4 dark:bg-gray-700"></hr>
+        <hr className=" mx-auto w-48 h-1 bg-gray-500 rounded border-0 md:my-4 dark:bg-gray-700"></hr>
       </div>
       <div
         className="flex flex-col md:flex-row w-4/5 justify-between 
@@ -65,7 +65,7 @@ const About = () => {
               governance, and scaling of the
               community..
             </p>
-            <button className='bg-violet-700 mt-4 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full'><a href="https://www.linkedin.com/in/usama-anwar-16803521b">Contact us</a></button>
+            <button className='bg-violet-700 mt-4 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full'><a target="_blank" href="https://www.linkedin.com/in/usama-anwar-16803521b">Contact us</a></button>
           </div>
           <div className="bg-white/10 p-8 rounded-xl">
             <img className='rounded-full h-60 mx-auto' src={mubashar} alt="" />
@@ -76,7 +76,7 @@ const About = () => {
               Science from the Punjab University
               College of Information Technology
             </p>
-            <button className='bg-violet-700 mt-4 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full'><a href="https://www.linkedin.com/in/mubashar-islam-342483147/">Contact us</a></button>
+            <button className='bg-violet-700 mt-4 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full'><a target="_blank" href="https://www.linkedin.com/in/mubashar-islam-342483147/">Contact us</a></button>
           </div>
           <div className="bg-white/10 p-8 rounded-xl">
             <img className='rounded-full h-60 mx-auto' src={ali} alt="" />
@@ -88,7 +88,7 @@ const About = () => {
               governance, and scaling of the
               community..
             </p>
-            <button className='bg-violet-700 mt-4 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full'><a href="https://twitter.com/Muhamma40533604?t=5LDtN5ExBSKJeTNXeGd8_g&s=09">Contact us</a></button>
+            <button className='bg-violet-700 mt-4 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full'><a target="_blank" href="https://twitter.com/Muhamma40533604?t=5LDtN5ExBSKJeTNXeGd8_g&s=09">Contact us</a></button>
           </div>
 
         </div>

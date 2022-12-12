@@ -6,7 +6,15 @@ const Footer = () => (
   <div className="w-full flex md:justify-center justify-between items-center flex-col p-4">
     <div className="w-full flex sm:flex-row flex-col justify-between items-center my-4 mt-32">
       <div className="flex flex-[0.25] justify-center items-center">
-        <img src={timelessLogo} alt="logo" className="w-32" />
+      <NavLink
+          to="/"
+        >
+           <img
+          className="w-40 cursor-pointer"
+          src={timelessLogo}
+          alt="Timeless Logo"
+        />
+        </NavLink>
       </div>
 
       <div className="flex flex-1 w-full justify-evenly items-center flex-wrap sm:mt-0 mt-5">

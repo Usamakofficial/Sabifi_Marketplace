@@ -27,7 +27,7 @@ const Hero = () => {
         <div className="flex flex-row mt-5">
           <button
             className="shadow-xl  text-white
-            bg-violet-700 hover:bg-[#bd255f]
+            bg-violet-700 hover:bg-blue-700
             rounded-full cursor-pointer p-3 font-bold"
             onClick={onCreatedNFT}
           >
@@ -72,7 +72,7 @@ const Hero = () => {
                 ? truncate(connectedAccount, 4, 4, 11)
                 : 'Connect Your Wallet'}
             </p>
-            <small className="text-pink-800 font-bold">@you</small>
+            <small className="text-violet-700 font-bold">@you</small>
           </div>
         </div>
       </div>

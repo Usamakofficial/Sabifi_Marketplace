@@ -10,12 +10,9 @@ import {
 } from "react-icons/bs";
 import {
   Link,
-  Button,
-  Element,
-  Events,
+  
   animateScroll as scroll,
-  scrollSpy,
-  scroller,
+  
 } from "react-scroll";
 
 function Api() {
@@ -23,11 +20,11 @@ function Api() {
   const [data, setData] = useState([]);
   console.log(data);
 
-  const connect = async () => {
+  const connect = () => {
     // const provider = new ethers.providers.Web3Provider(window.ethereum);
     // let res = await provider.send("eth_requestAccounts", []);
     // setAccount(res[0]);
-    getData([0]);
+    getData([0])
   };
   const getData = () => {
     const options = {
@@ -56,8 +53,8 @@ function Api() {
   return (
     <>
       <div className='flex justify-center pt-24'>
-      <Link to="anchor" spy={true} smooth={true} duration={500} >
-      <button onClick={connect} className='bg-[#e32970] hover:bg-[#bd255f] text-white font-bold py-4 text-xl tracking-widest px-20 rounded-full'>Our NFTs</button>
+      <Link to="anchor" spy={true} smooth={true} duration={700} >
+      <button onClick={connect} className='bg-violet-700 hover:bg-[#bd255f] text-white font-bold py-4 text-xl tracking-widest px-20 rounded-full'>Our NFTs</button>
       </Link>
     </div>
       <h4 className="text-white text-3xl  font-bold uppercase text-gradient ml-36 mt-12">
@@ -66,13 +63,13 @@ function Api() {
           : "Click to see Featured NFTs of Sabifi"}
       </h4>
 
-      <div className="w-4/5 py-10 mx-auto ">
+      <div id="anchor" className="w-4/5 py-10 mx-auto ">
         <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6  md:gap-4 lg:gap-7 py-2.5 cursor-pointer">
           {data.map((nft) => {
             return (
               <>
                 <div
-                  id="anchor"
+                  
                   className="w-full shadow-xl rounded-md  bg-white my-2 p-3 transform 
                   transition-all hover:translate-y-2 duration-300 hover:scale-[1.1]"
                 >
