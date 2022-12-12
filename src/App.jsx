@@ -15,7 +15,7 @@ const App = () => {
 
   return (
     <>
-    <div className="bg-gradient-to-b from-neutral-900 bg-indigo-700">
+    <div className="bg-gradient-to-b bg-white">
   <Header />
    <Switch>
     <Route exact path='/' component={Home}/>

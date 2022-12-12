@@ -12,7 +12,7 @@ const Loading = () => {
     >
       <div
         className="flex flex-col justify-center
-        items-center bg-[#151c25] shadow-xl 
+        items-center bg-violet-700 shadow-xl 
         shadow-[#e32970] rounded-xl 
         min-w-min px-10 pb-2"
       >
