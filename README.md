@@ -5,3 +5,4 @@ In the frontend part I worked with React.
 The objective with this project was to learn more on my own and take into account the architecture behind building a whole project for the web3 ecosystem.. Strengthen our knowledge about truffle and the powerful tool it is to build, test and implement our projects
 
 I wanted to explore more on ERC721 contracts and their design, to see all the potential and use cases that we can explore with this.(Hope you liked)
+![Screenshot (47)](https://user-images.githubusercontent.com/106371202/207230303-4cf72ee1-b51e-4e4b-a736-bef8ec96492d.png)
