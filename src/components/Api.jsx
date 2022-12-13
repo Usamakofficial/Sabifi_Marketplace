@@ -57,11 +57,13 @@ function Api() {
       <button onClick={connect} className='bg-violet-700 hover:bg-[#bd255f] text-white font-bold py-4 text-xl tracking-widest px-20 rounded-full'>Our NFTs</button>
       </Link>
     </div>
-      <h4 className="text-white text-3xl  font-bold uppercase text-gradient ml-36 mt-12">
+    <div className="container w-4/5 mx-auto">
+      <h4 className=" text-white text-3xl font-bold uppercase text-gradient my-20">
         {data.length > 0
           ? "Our Featured NFTs on OpenSea"
           : "Click to see Featured NFTs of Sabifi"}
       </h4>
+      </div>
 
       <div id="anchor" className="w-4/5 py-10 mx-auto ">
         <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6  md:gap-4 lg:gap-7 py-2.5 cursor-pointer">
@@ -70,7 +72,7 @@ function Api() {
               <>
                 <div
                   
-                  className="w-full shadow-xl rounded-md  bg-white my-2 p-3 transform 
+                  className="w-full shadow-xl rounded-2xl  bg-white my-2 p-3 transform 
                   transition-all hover:translate-y-2 duration-300 hover:scale-[1.1]"
                 >
                   <img
