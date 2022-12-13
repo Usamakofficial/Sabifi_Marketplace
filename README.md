@@ -12,7 +12,10 @@ SABIFI TOKEN
 
 FOUNDER OF SABIFI
 
-![Screenshot (46)](https://user-images.githubusercontent.com/106371202/207230491-7000ee84-2f1c-44b9-97fd-63b6143ff58e.png)
+![Screenshot (46)](https://![Screenshot (46)](https://user-images.githubusercontent.com/106371202/207230981-e681aa13-0e17-4e45-84ad-b5ea52841324.png)
+
 
 CREATORS OF SABIFI
-![Screenshot (49)](https://user-images.githubusercontent.com/106371202/207230562-767d4363-597e-4eb5-a5e9-1a3f8d2134d0.png)
+
+
+![Screenshot (49)](https://user-images.githubusercontent.com/106371202/207230873-fe4b7e29-06f3-4377-8349-5688fb4541be.png)
