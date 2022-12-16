@@ -2749,9 +2749,9 @@
   "version" "4.1.0"
 
 "@redux-saga/core@^1.0.0":
-  "integrity" "sha512-ABCxsZy9DwmNoYNo54ZlfuTvh77RXx8ODKpxOHeWam2dOaLGQ7vAktpfOtqSeTdYrKEORtTeWnxkGJMmPOoukg=="
-  "resolved" "https://registry.npmjs.org/@redux-saga/core/-/core-1.2.1.tgz"
-  "version" "1.2.1"
+  "integrity" "sha512-0qr5oleOAmI5WoZLRA6FEa30M4qKZcvx+ZQOQw+RqFeH8t20bvhE329XSPsNfTVP8C6qyDsXOSjuoV+g3+8zkg=="
+  "resolved" "https://registry.npmjs.org/@redux-saga/core/-/core-1.2.2.tgz"
+  "version" "1.2.2"
   dependencies:
     "@babel/runtime" "^7.6.3"
     "@redux-saga/deferred" "^1.2.1"
@@ -3139,15 +3139,16 @@
     "@truffle/error" "^0.1.1"
     "colors" "1.4.0"
 
-"@truffle/config@^1.3.45":
-  "integrity" "sha512-G+8jGhqHBkxT+7Q4zEUtP7RQyuistVA9dr4eaED1UkutO33s1m3Vj3c0oTCa+ctC2JTaPf7URhagq6othTz+YA=="
-  "resolved" "https://registry.npmjs.org/@truffle/config/-/config-1.3.45.tgz"
-  "version" "1.3.45"
+"@truffle/config@^1.3.46":
+  "integrity" "sha512-QKmijNyFdel4J68P9395TtPFvj84b30JUNeYGvRplkU+UTVIQwQOopXg0GVPeK1FNozlpNz9gDNFZKa5FALUkQ=="
+  "resolved" "https://registry.npmjs.org/@truffle/config/-/config-1.3.46.tgz"
+  "version" "1.3.46"
   dependencies:
     "@truffle/error" "^0.1.1"
     "@truffle/events" "^0.1.19"
-    "@truffle/provider" "^0.2.64"
+    "@truffle/provider" "^0.3.0"
     "conf" "^10.1.2"
+    "debug" "^4.3.1"
     "find-up" "^2.1.0"
     "lodash" "^4.17.21"
     "original-require" "^1.0.1"
@@ -3172,23 +3173,23 @@
   "resolved" "https://registry.npmjs.org/@truffle/dashboard-message-bus-common/-/dashboard-message-bus-common-0.1.5.tgz"
   "version" "0.1.5"
 
-"@truffle/db-loader@^0.2.7":
-  "integrity" "sha512-ivcmXdKa0bJwVlHWXaYHXD1u2N+2z5m0IhXF1rKcqmkaLsO8lGNs81uJ6s9uCC7On0INGFf+0ugYpM+jog2Plw=="
-  "resolved" "https://registry.npmjs.org/@truffle/db-loader/-/db-loader-0.2.7.tgz"
-  "version" "0.2.7"
+"@truffle/db-loader@^0.2.9":
+  "integrity" "sha512-ClZd7ctYLbfN2J0VGEWvqdqMr6QqJgBxjkkxl8vqll7eY3Z0v7jjzfuBW4vcfzW1/JawYCPIeNEaAVK98Uya5w=="
+  "resolved" "https://registry.npmjs.org/@truffle/db-loader/-/db-loader-0.2.9.tgz"
+  "version" "0.2.9"
   optionalDependencies:
-    "@truffle/db" "^2.0.7"
+    "@truffle/db" "^2.0.9"
 
-"@truffle/db@^2.0.7":
-  "integrity" "sha512-4X3Nmn+zc2QV6h7BeIdjoggaPlCPPCs3WQcnqBzuI7rE6rLWwrrsN3Ow17DaDGOAcYvQ3rIhvHRZXleYqQNNHw=="
-  "resolved" "https://registry.npmjs.org/@truffle/db/-/db-2.0.7.tgz"
-  "version" "2.0.7"
+"@truffle/db@^2.0.9":
+  "integrity" "sha512-DYUl/77NYv92n3GJXkzvvY4Pn/VQDd7HGbyhiQQIHWdGMQeyFzrCZj8S4mIlZLgfWb+nlCUYgzP9pFIDbZauQQ=="
+  "resolved" "https://registry.npmjs.org/@truffle/db/-/db-2.0.9.tgz"
+  "version" "2.0.9"
   dependencies:
     "@graphql-tools/delegate" "^8.4.3"
     "@graphql-tools/schema" "^8.3.1"
     "@truffle/abi-utils" "^0.3.5"
     "@truffle/code-utils" "^3.0.1"
-    "@truffle/config" "^1.3.45"
+    "@truffle/config" "^1.3.46"
     "abstract-leveldown" "^7.2.0"
     "apollo-server" "^3.11.0"
     "debug" "^4.3.1"
@@ -3204,10 +3205,10 @@
     "pouchdb-find" "^7.0.0"
     "web3-utils" "1.7.4"
 
-"@truffle/debugger@^11.0.18":
-  "integrity" "sha512-SujNw/7BSRHsTpVLGac+MuCI9wxAICBFcEgw/KSvyno75BZfd1h5a21sin+JwdK7qmkY0diPox47OfImsTPdBA=="
-  "resolved" "https://registry.npmjs.org/@truffle/debugger/-/debugger-11.0.18.tgz"
-  "version" "11.0.18"
+"@truffle/debugger@^11.0.20":
+  "integrity" "sha512-Yd/+ScYsrkZm6h2N56Y3wesgDF+d3turegNat9MfqUJYhCSnmQOLworZDdmyLx083RsSHoFD0bDzipWru54Ktg=="
+  "resolved" "https://registry.npmjs.org/@truffle/debugger/-/debugger-11.0.20.tgz"
+  "version" "11.0.20"
   dependencies:
     "@truffle/abi-utils" "^0.3.5"
     "@truffle/codec" "^0.14.10"
@@ -3240,16 +3241,18 @@
     "emittery" "^0.4.1"
     "web3-utils" "1.7.4"
 
-"@truffle/hdwallet-provider@^2.0.4":
-  "integrity" "sha512-nVkGeQBtgMO8tj3DSGFAKv/T8pgPyu62pWycvgWRSXps8cwlqQ+0YfqYG7Tw3ivbXifCtQ2HkwZH+6jDESi4UQ=="
-  "resolved" "https://registry.npmjs.org/@truffle/hdwallet-provider/-/hdwallet-provider-2.1.2.tgz"
-  "version" "2.1.2"
+"@truffle/hdwallet-provider@^2.1.3":
+  "integrity" "sha512-XOA5AJou4FrHiJEgcewq+86iWJm2t6HrLV5ixGMjULdV+iJzBMtBqOdNM+l8DPSOEIZ3XExOlpZ9PDGs/mD6Uw=="
+  "resolved" "https://registry.npmjs.org/@truffle/hdwallet-provider/-/hdwallet-provider-2.1.3.tgz"
+  "version" "2.1.3"
   dependencies:
     "@ethereumjs/common" "^2.4.0"
     "@ethereumjs/tx" "^3.3.0"
     "@metamask/eth-sig-util" "4.0.1"
     "@truffle/hdwallet" "^0.1.1"
-    "@types/web3" "^1.0.20"
+    "@types/ethereum-protocol" "^1.0.0"
+    "@types/web3" "1.0.20"
+    "@types/web3-provider-engine" "^14.0.0"
     "ethereum-cryptography" "1.1.2"
     "ethereum-protocol" "^1.0.1"
     "ethereumjs-util" "^7.1.5"
@@ -3279,10 +3282,10 @@
   "resolved" "https://registry.npmjs.org/@truffle/promise-tracker/-/promise-tracker-0.1.5.tgz"
   "version" "0.1.5"
 
-"@truffle/provider@^0.2.64":
-  "integrity" "sha512-ZwPsofw4EsCq/2h0t73SPnnFezu4YQWBmK4FxFaOUX0F+o8NsZuHKyfJzuZwyZbiktYmefM3yD9rM0Dj4BhNbw=="
-  "resolved" "https://registry.npmjs.org/@truffle/provider/-/provider-0.2.64.tgz"
-  "version" "0.2.64"
+"@truffle/provider@^0.3.0":
+  "integrity" "sha512-T60Q8p+AvpdzP+daZy9awKt05CdiUUTqzpK61tlPf6PEv5EZ6Z5Cue+R4I12G1bcuVtQn94Uw6SJ2j8emDmsUg=="
+  "resolved" "https://registry.npmjs.org/@truffle/provider/-/provider-0.3.0.tgz"
+  "version" "0.3.0"
   dependencies:
     "@truffle/error" "^0.1.1"
     "@truffle/interface-adapter" "^0.5.25"
@@ -3374,17 +3377,17 @@
   dependencies:
     "@babel/types" "^7.3.0"
 
+"@types/bn.js@*", "@types/bn.js@^5.1.0":
+  "integrity" "sha512-qNrYbZqMx0uJAfKnKclPh+dTwK33KfLHYqtyODwd5HnXOjnkhc4qgn3BrK6RWyGZm5+sIFE7Q7Vz6QQtJB7w7g=="
+  "resolved" "https://registry.npmjs.org/@types/bn.js/-/bn.js-5.1.1.tgz"
+  "version" "5.1.1"
+  dependencies:
+    "@types/node" "*"
+
 "@types/bn.js@^4.11.3":
   "integrity" "sha512-pqr857jrp2kPuO9uRjZ3PwnJTjoQy+fcdxvBTvHm6dkmEL9q+hDD/2j/0ELOBPtPnS8LjCX0gI9nbl8lVkadpg=="
   "resolved" "https://registry.npmjs.org/@types/bn.js/-/bn.js-4.11.6.tgz"
   "version" "4.11.6"
-  dependencies:
-    "@types/node" "*"
-
-"@types/bn.js@^5.1.0":
-  "integrity" "sha512-qNrYbZqMx0uJAfKnKclPh+dTwK33KfLHYqtyODwd5HnXOjnkhc4qgn3BrK6RWyGZm5+sIFE7Q7Vz6QQtJB7w7g=="
-  "resolved" "https://registry.npmjs.org/@types/bn.js/-/bn.js-5.1.1.tgz"
-  "version" "5.1.1"
   dependencies:
     "@types/node" "*"
 
@@ -3463,6 +3466,13 @@
   "integrity" "sha512-EYNwp3bU+98cpU4lAWYYL7Zz+2gryWH1qbdDTidVd6hkiR6weksdbMadyXKXNPEkQFhXM+hVO9ZygomHXp+AIw=="
   "resolved" "https://registry.npmjs.org/@types/estree/-/estree-0.0.39.tgz"
   "version" "0.0.39"
+
+"@types/ethereum-protocol@*", "@types/ethereum-protocol@^1.0.0":
+  "integrity" "sha512-Ri/hwt4UckZlF7eqhhAQcXsNvcgQmSJOKZteLco1/5NsRcneW/cJuQcrQNILN2Ohs9WUQjeGW3ZRRNqkEVMzuQ=="
+  "resolved" "https://registry.npmjs.org/@types/ethereum-protocol/-/ethereum-protocol-1.0.2.tgz"
+  "version" "1.0.2"
+  dependencies:
+    "bignumber.js" "7.2.1"
 
 "@types/express-serve-static-core@*", "@types/express-serve-static-core@^4.17.18", "@types/express-serve-static-core@4.17.31":
   "integrity" "sha512-DxMhY+NAsTwMMFHBTtJFNp5qiHKJ7TeqOo23zVEM9alT1Ml27Q3xcTH0xwxn7Q0BbMcVEJOs/7aQtUWupUQN3Q=="
@@ -3726,12 +3736,25 @@
   "resolved" "https://registry.npmjs.org/@types/trusted-types/-/trusted-types-2.0.2.tgz"
   "version" "2.0.2"
 
-"@types/web3@^1.0.20":
-  "integrity" "sha512-eFiYJKggNrOl0nsD+9cMh2MLk4zVBfXfGnVeRFbpiZzBE20eet4KLA3fXcjSuHaBn0RnQzwLAGdgzgzdet4C0A=="
-  "resolved" "https://registry.npmjs.org/@types/web3/-/web3-1.2.2.tgz"
-  "version" "1.2.2"
+"@types/underscore@*":
+  "integrity" "sha512-uO4CD2ELOjw8tasUrAhvnn2W4A0ZECOvMjCivJr4gA9pGgjv+qxKWY9GLTMVEK8ej85BxQOocUyE7hImmSQYcg=="
+  "resolved" "https://registry.npmjs.org/@types/underscore/-/underscore-1.11.4.tgz"
+  "version" "1.11.4"
+
+"@types/web3-provider-engine@^14.0.0":
+  "integrity" "sha512-SaAfLJY/40wKFDsNFwaNfwqFSL6kVhTx9JD18qM+Gaw1qdAXLYF/6E7TIqWEdoG4so6fki/zxURP5NsoCePYJw=="
+  "resolved" "https://registry.npmjs.org/@types/web3-provider-engine/-/web3-provider-engine-14.0.1.tgz"
+  "version" "14.0.1"
   dependencies:
-    "web3" "*"
+    "@types/ethereum-protocol" "*"
+
+"@types/web3@1.0.20":
+  "integrity" "sha512-KTDlFuYjzCUlBDGt35Ir5QRtyV9klF84MMKUsEJK10sTWga/71V+8VYLT7yysjuBjaOx2uFYtIWNGoz3yrNDlg=="
+  "resolved" "https://registry.npmjs.org/@types/web3/-/web3-1.0.20.tgz"
+  "version" "1.0.20"
+  dependencies:
+    "@types/bn.js" "*"
+    "@types/underscore" "*"
 
 "@types/ws@^8.5.1":
   "integrity" "sha512-6YOoWjruKj1uLf3INHH7D3qTXwFfEsg1kf3c0uDdSBJwfa/llkwIjrAGV7j7mVgGNbzTQ3HiHKKDXl6bJPD97w=="
@@ -5576,6 +5599,11 @@
   "integrity" "sha512-4LwHK4nfDOraBCtst+wOWIHbu1vhvAPJK8g8nROd4iuc3PSEjWif/qwbkh8jwCJz6yDBvtU4KPynETgrfh7y3A=="
   "resolved" "https://registry.npmjs.org/bignumber.js/-/bignumber.js-9.1.0.tgz"
   "version" "9.1.0"
+
+"bignumber.js@7.2.1":
+  "integrity" "sha512-S4XzBk5sMB+Rcb/LNcpzXr57VRTxgAvaAEDAl1AwRx27j00hT84O6OkteE7u8UB3NuaaygCRrEpqox4uDOrbdQ=="
+  "resolved" "https://registry.npmjs.org/bignumber.js/-/bignumber.js-7.2.1.tgz"
+  "version" "7.2.1"
 
 "binary-extensions@^2.0.0":
   "integrity" "sha512-jDctJ/IVQbZoJykoeHbhXpOlNBqGNcwXJKJog42E5HDPUwQTSdjCHdihjj0DlnheQ7blbT6dHOafNAiS8ooQKA=="
@@ -15960,19 +15988,19 @@
     "web3" "1.2.1"
     "websocket" "^1.0.28"
 
-"truffle@^5.6.8":
-  "integrity" "sha512-cZJzrcIDA4fTIZo6lBPydw2g5kU/0V+wMA+p3ZqDi3DXdk2STeNg77cmOgW2OFwoZVTfmm2WLWnJv3vW++b0hg=="
-  "resolved" "https://registry.npmjs.org/truffle/-/truffle-5.6.8.tgz"
-  "version" "5.6.8"
+"truffle@^5.7.0":
+  "integrity" "sha512-G9onNUW2mMrCVTca5Fafzor4mlD9wly8KA6OJ5aFNNXNmkOVVVlOSPYf39Pe1CXRg4fMxXikpABMz5rNZm73gw=="
+  "resolved" "https://registry.npmjs.org/truffle/-/truffle-5.7.0.tgz"
+  "version" "5.7.0"
   dependencies:
-    "@truffle/db-loader" "^0.2.7"
-    "@truffle/debugger" "^11.0.18"
+    "@truffle/db-loader" "^0.2.9"
+    "@truffle/debugger" "^11.0.20"
     "app-module-path" "^2.2.0"
     "ganache" "7.5.0"
     "mocha" "10.1.0"
     "original-require" "^1.0.1"
   optionalDependencies:
-    "@truffle/db" "^2.0.7"
+    "@truffle/db" "^2.0.9"
 
 "tryer@^1.0.1":
   "integrity" "sha512-c3zayb8/kWWpycWYg87P71E1S1ZL6b6IJxfb5fvsUgsf0S2MVGaDhDXXjDMpdCpfWXqptc+4mXwmiy1ypXqRAA=="
@@ -17488,7 +17516,7 @@
     "randombytes" "^2.1.0"
     "utf8" "3.0.0"
 
-"web3@*", "web3@^1.7.1":
+"web3@^1.7.1":
   "integrity" "sha512-tAqFsQhGv340C9OgRJIuoScN7f7wa1tUvsnnDUMt9YE6J4gcm7TV2Uwv+KERnzvV+xgdeuULYpsioRRNKrUvoQ=="
   "resolved" "https://registry.npmjs.org/web3/-/web3-1.8.1.tgz"
   "version" "1.8.1"

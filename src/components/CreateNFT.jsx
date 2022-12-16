@@ -13,7 +13,7 @@ import favicon from "../assets/favicon.png";
 const auth =
   'Basic ' +
   Buffer.from(
-    "2IGcao3DIt2K5C7qHgm1vWaIU5C" + ':' + "157b5d7cd67aeb879249aa79a5b1a543",
+    "2IGcao3DIt2K5C7qHgm1vWaIU5C" + ":" +"157b5d7cd67aeb879249aa79a5b1a543",
   ).toString('base64')
 
 const client = create({
