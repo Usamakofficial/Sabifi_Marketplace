@@ -40,7 +40,13 @@ const Header = () => {
         hidden list-none flex-row justify-between pr-6
         text-lg
         items-center flex-initial"
-      >
+      ><button  class="shadow-xl text-white
+      bg-violet-700 hover:bg-blue-700 md:text-l p-3
+      rounded-full cursor-pointer font-bold">
+        <a href="https://swap.sabifi.io/" target='_blank'>
+      Launch App
+      </a>
+    </button>
         <NavLink
           exact
           activeClassName="active_class"
@@ -68,6 +74,7 @@ const Header = () => {
         >
           About Us
         </NavLink>
+        
         <div className="mx-4 cursor-pointer font-bold">
           <Whitepaper />
         </div>
