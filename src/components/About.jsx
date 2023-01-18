@@ -3,7 +3,7 @@ import ceo from "../assets/boss.png";
 import usama from "../assets/usama.jpeg";
 import ali from "../assets/ali.jpg";
 import mubashar from "../assets/mubashar.jpg";
-import Particle from "./Particle";
+// import Particle from "./Particle";
 
 const About = () => {
   return (
@@ -117,7 +117,7 @@ const About = () => {
         </div>
       </div>
 
-      <Particle />
+      {/* <Particle /> */}
     </>
   );
 };

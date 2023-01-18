@@ -5,7 +5,7 @@ import policon from "../assets/policon.png";
 import cmcicon from "../assets/cmcicon.png";
 import Artboard from "../assets/artboard.png";
 import ArrowOutwardIcon from "@mui/icons-material/ArrowOutward";
-import Particle from "./Particle";
+// import Particle from "./Particle";
 const Token = () => {
   return (
     <>
@@ -135,7 +135,7 @@ const Token = () => {
           </div>
         </div>
       </div>
-      <Particle />
+      {/* <Particle /> */}
     </>
   );
 };

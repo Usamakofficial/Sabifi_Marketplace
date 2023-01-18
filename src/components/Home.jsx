@@ -6,7 +6,7 @@ import Transactions from "./Transactions";
 import UpdateNFT from "./UpdateNFT";
 import Artworks from "./Artworks";
 import CreateNFT from "./CreateNFT";
-import Particle from "./Particle";
+// import Particle from "./Particle";
 import Api from "./Api";
 const Home = () => {
   return (
@@ -19,7 +19,7 @@ const Home = () => {
       <ShowNFT />
       <UpdateNFT />
       <Loading />
-      <Particle />
+      {/* <Particle /> */}
     </div>
   );
 };

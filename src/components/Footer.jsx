@@ -119,7 +119,7 @@ const Footer = () => {
                 <i class="far fa-envelope-open"></i>
                 <div class="cta-text">
                   <h4>Mail us</h4>
-                  <span>sabifierc20@gmail.com</span>
+                  <span>contact@sabifi.io</span>
                 </div>
               </div>
             </div>
@@ -141,7 +141,6 @@ const Footer = () => {
                     elit,Lorem ipsum dolor sit amet.
                   </p>
                 </div>
-           
               </div>
             </div>
             <div class="col-xl-4 col-lg-4 col-md-6 mb-30">
@@ -162,26 +161,26 @@ const Footer = () => {
                     </NavLink>
                   </li>
                   <li>
-                  <NavLink
-                exact
-                activeClassName="active-link"
-                to="/about"
-                className=" cursor-pointer 
+                    <NavLink
+                      exact
+                      activeClassName="active-link"
+                      to="/about"
+                      className=" cursor-pointer 
           "
-              >
-                About Us
-              </NavLink>
+                    >
+                      About Us
+                    </NavLink>
                   </li>
                   <li>
-                  <NavLink
-                exact
-                activeClassName="active-link"
-                to="/token"
-                className=" cursor-pointer 
+                    <NavLink
+                      exact
+                      activeClassName="active-link"
+                      to="/token"
+                      className=" cursor-pointer 
           "
-              >
-                Token
-              </NavLink>
+                    >
+                      Token
+                    </NavLink>
                   </li>
                   <li>
                     <a href="#">portfolio</a>
@@ -190,7 +189,9 @@ const Footer = () => {
                     <a href="#">Contact</a>
                   </li>
                   <li>
-                    <a href="#">Sabswap</a>
+                    <a href="https://swap.sabifi.io/" target="_blank">
+                      Sabswap
+                    </a>
                   </li>
                   <li>
                     <a href="#">Our NFTs</a>
@@ -250,7 +251,9 @@ const Footer = () => {
               <div class="copyright-text">
                 <p>
                   Copyright &copy; 2023, All Right Reserved{" "}
-                  <a href="https://swap.sabifi.io/">Sabifi</a>
+                  <a href="https://swap.sabifi.io/" target="_blank">
+                    Sabifi
+                  </a>
                 </p>
               </div>
             </div>
