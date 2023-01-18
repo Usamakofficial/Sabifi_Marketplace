@@ -30,8 +30,7 @@ const Artworks = () => {
         {collection.length > 0 && nfts.length > collection.length ? (
           <div className="text-center my-5 " >
             <button
-              className="shadow-xl text-white
-            bg-violet-700 hover:bg-[#bd255f]
+              className="btn shadow-xl text-white
             rounded-full cursor-pointer p-2 font-semibold"
               onClick={() => setEnd(end + count)}
             >

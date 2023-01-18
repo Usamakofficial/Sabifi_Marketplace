@@ -8,12 +8,7 @@ import {
   BsFillArrowDownCircleFill,
   BsFillArrowUpRightCircleFill,
 } from "react-icons/bs";
-import {
-  Link,
-  
-  animateScroll as scroll,
-  
-} from "react-scroll";
+import { Link, animateScroll as scroll } from "react-scroll";
 
 function Api() {
   // const [account, setAccount] = useState("");
@@ -24,7 +19,7 @@ function Api() {
     // const provider = new ethers.providers.Web3Provider(window.ethereum);
     // let res = await provider.send("eth_requestAccounts", []);
     // setAccount(res[0]);
-    getData([0])
+    getData([0]);
   };
   const getData = () => {
     const options = {
@@ -52,46 +47,50 @@ function Api() {
 
   return (
     <>
-      <div className='flex justify-center py-24'>
-      <Link to="anchor" spy={true} smooth={true} duration={700} >
-      <button onClick={connect} className='bg-violet-700 hover:bg-indigo-700 text-white font-bold py-4 text-xl tracking-widest px-20 rounded-full'>Our NFTs</button>
-      </Link>
-    </div>
-    <div className="container w-4/5 mx-auto">
-      <h4 className=" text-white text-3xl font-bold uppercase text-gradient">
-        {data.length > 0
-          ? "Our Featured NFTs on OpenSea"
-          : "Click to see Featured NFTs of Sabifi"}
-      </h4>
+      <div className="flex justify-center py-24">
+        <Link to="anchor" spy={true} smooth={true} duration={700}>
+          <button
+            onClick={connect}
+            className="btn text-white font-bold py-2 text-xl tracking-widest px-5 "
+          >
+            Our NFTs
+          </button>
+        </Link>
+      </div>
+      <div className="container w-4/5 mx-auto">
+        <h4 className=" text-white text-3xl font-bold uppercase text-gradient">
+          {data.length > 0
+            ? "Our Featured NFTs on OpenSea"
+            : "Click to see Featured NFTs of Sabifi"}
+        </h4>
       </div>
 
-      <div id="anchor" className="w-4/5 mx-auto ">
+      <div id="anchor" className="nft-image w-4/5 mx-auto ">
         <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6  md:gap-4 lg:gap-7 py-2.5 cursor-pointer">
           {data.map((nft) => {
             return (
               <>
                 <div
-                  
-                  className="w-full shadow-xl rounded-2xl  bg-white my-2 p-3 transform 
+                  className="w-full shadow-xl rounded-2xl bg-white my-2 p-3 transform 
                   transition-all hover:translate-y-2 duration-300 hover:scale-[1.1]"
                 >
                   <img
                     src={nft.image_thumbnail_url}
-                    className="h-86 w-full object-cover shadow-lg rounded-lg mb-3 "
+                    className="image-br h-86  w-full object-cover rounded-lg mb-3 "
                   />
-                  <h2 className="text-black font-bold mt-4 mb-3 w-28 overflow-hidden h-6 float-left">
+                  <h2 className="text-black font-bold mt-4 mb-3 w-28 overflow-hidden h-5 float-left">
                     {nft.name}
                   </h2>
                   <button
-                    className="shadow-lg text-white text-sm bg-violet-700
-                  hover:bg-[#bd255f] cursor-pointer rounded-full px-3 py-1 float-right  mt-4 mb-3"
+                    className="btn shadow-lg text-white text-sm
+                   cursor-pointer rounded-full px-3 py-1 float-right  mt-4 mb-3"
                   >
                     <a href={nft.permalink} target="_blank">
                       View on OpenSea
                     </a>
                   </button>
                   <div className="mt-20">
-                    <p className="text-gray-400 h-16 overflow-hidden text-sm">
+                    <p className=" text-gray-400 h-16 overflow-hidden text-sm">
                       {nft.description}
                     </p>
                   </div>

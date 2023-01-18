@@ -3,85 +3,86 @@ import {
   setGlobalState,
   setLoadingMsg,
   setAlert,
-} from '../store'
-import { useState } from 'react'
-import { FaTimes } from 'react-icons/fa'
-import { create } from 'ipfs-http-client'
-import { mintNFT } from '../Blockchain.Services'
+} from "../store";
+import { useState } from "react";
+import { FaTimes } from "react-icons/fa";
+import { create } from "ipfs-http-client";
+import { mintNFT } from "../Blockchain.Services";
 import favicon from "../assets/favicon.png";
+import sabifi from "../assets/sabifi.png";
 
 const auth =
-  'Basic ' +
+  "Basic " +
   Buffer.from(
-    "2IGcao3DIt2K5C7qHgm1vWaIU5C" + ":" +"157b5d7cd67aeb879249aa79a5b1a543",
-  ).toString('base64')
+    "2IGcao3DIt2K5C7qHgm1vWaIU5C" + ":" + "157b5d7cd67aeb879249aa79a5b1a543"
+  ).toString("base64");
 
 const client = create({
-  host: 'ipfs.infura.io',
+  host: "ipfs.infura.io",
   port: 5001,
-  protocol: 'https',
+  protocol: "https",
   headers: {
     authorization: auth,
   },
-})
+});
 
 const CreateNFT = () => {
-  const [modal] = useGlobalState('modal')
-  const [title, setTitle] = useState('')
-  const [price, setPrice] = useState('')
-  const [description, setDescription] = useState('')
-  const [fileUrl, setFileUrl] = useState('')
-  const [imgBase64, setImgBase64] = useState(null)
+  const [modal] = useGlobalState("modal");
+  const [title, setTitle] = useState("");
+  const [price, setPrice] = useState("");
+  const [description, setDescription] = useState("");
+  const [fileUrl, setFileUrl] = useState("");
+  const [imgBase64, setImgBase64] = useState(null);
 
   const handleSubmit = async (e) => {
-    e.preventDefault()
+    e.preventDefault();
 
-    if (!title || !price || !description) return
+    if (!title || !price || !description) return;
 
-    setGlobalState('modal', 'scale-0')
-    setGlobalState('loading', { show: true, msg: 'Uploading IPFS data...' })
+    setGlobalState("modal", "scale-0");
+    setGlobalState("loading", { show: true, msg: "Uploading IPFS data..." });
 
     try {
-      const created = await client.add(fileUrl)
-      const metadataURI = `https://ipfs.io/ipfs/${created.path}`
-      const nft = { title, price, description, metadataURI }
+      const created = await client.add(fileUrl);
+      const metadataURI = `https://ipfs.io/ipfs/${created.path}`;
+      const nft = { title, price, description, metadataURI };
 
-      setLoadingMsg('Intializing transaction...')
-      setFileUrl(metadataURI)
-      await mintNFT(nft)
+      setLoadingMsg("Intializing transaction...");
+      setFileUrl(metadataURI);
+      await mintNFT(nft);
 
-      resetForm()
-      setAlert('Minting completed...', 'green')
-      window.location.reload()
+      resetForm();
+      setAlert("Minting completed...", "green");
+      window.location.reload();
     } catch (error) {
-      console.log('Error uploading file: ', error)
-      setAlert('Minting failed...', 'red')
+      console.log("Error uploading file: ", error);
+      setAlert("Minting failed...", "red");
     }
-  }
+  };
 
   const changeImage = async (e) => {
-    const reader = new FileReader()
-    if (e.target.files[0]) reader.readAsDataURL(e.target.files[0])
+    const reader = new FileReader();
+    if (e.target.files[0]) reader.readAsDataURL(e.target.files[0]);
 
     reader.onload = (readerEvent) => {
-      const file = readerEvent.target.result
-      setImgBase64(file)
-      setFileUrl(e.target.files[0])
-    }
-  }
+      const file = readerEvent.target.result;
+      setImgBase64(file);
+      setFileUrl(e.target.files[0]);
+    };
+  };
 
   const closeModal = () => {
-    setGlobalState('modal', 'scale-0')
-    resetForm()
-  }
+    setGlobalState("modal", "scale-0");
+    resetForm();
+  };
 
   const resetForm = () => {
-    setFileUrl('')
-    setImgBase64(null)
-    setTitle('')
-    setPrice('')
-    setDescription('')
-  }
+    setFileUrl("");
+    setImgBase64(null);
+    setTitle("");
+    setPrice("");
+    setDescription("");
+  };
 
   return (
     <div
@@ -107,13 +108,15 @@ const CreateNFT = () => {
               <img
                 alt="NFT"
                 className="h-full w-full object-cover cursor-pointer"
-                src={favicon}
+                src={sabifi}
               />
             </div>
           </div>
 
-          <div className="flex flex-row justify-between rounded-full
-              border-transparent drop-shadow-xl  items-center bg-white mt-5">
+          <div
+            className="flex flex-row justify-between rounded-full
+              border-transparent drop-shadow-xl  items-center bg-white mt-5"
+          >
             <label className="block">
               <span className="sr-only">Choose profile photo</span>
               <input
@@ -125,7 +128,7 @@ const CreateNFT = () => {
                   file:mr-4 file:py-2 file:px-4
                   file:rounded-full file:border-0
                   file:text-sm file:font-semibold
-                  file:bg-violet-700 file:text-white
+                  file:bg-gradient-to-r from-green-400 to-blue-500 file:text-white
                   cursor-pointer focus:ring-0 focus:outline-none"
                 onChange={changeImage}
                 required
@@ -133,8 +136,10 @@ const CreateNFT = () => {
             </label>
           </div>
 
-          <div className="flex flex-row justify-between
-                hover:bg-transparent items-center bg-white mt-5">
+          <div
+            className="flex flex-row justify-between
+                hover:bg-transparent items-center bg-white mt-5"
+          >
             <input
               className="block w-full text-sm rounded-full
               border-transparent drop-shadow-xl 
@@ -185,12 +190,10 @@ const CreateNFT = () => {
           <button
             type="submit"
             onClick={handleSubmit}
-            className="flex flex-row justify-center items-center
-              w-full text-black text-md bg-white
-              hover:bg-[#bd255f] py-2 px-5 rounded-full
+            className="btn flex flex-row justify-center items-center
+              w-full py-2 px-5 rounded-full
               drop-shadow-xl border border-transparent
-              hover:bg-transparent hover:text-gray-400
-              hover:border hover:border-gray-400
+              hover:bg-transparen
               font-bold text-base
               focus:outline-none focus:ring mt-5"
           >
@@ -199,7 +202,7 @@ const CreateNFT = () => {
         </form>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default CreateNFT
+export default CreateNFT;
