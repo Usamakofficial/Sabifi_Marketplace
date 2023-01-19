@@ -12,10 +12,10 @@ import Sliderss from "./Sliderss";
 const Home = () => {
   return (
     <div className="min-h-screen">
-      <Sliderss />
       <Hero />
 
       <Api />
+      <Sliderss />
       <Artworks />
       <Transactions />
       <CreateNFT />

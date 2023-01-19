@@ -65,7 +65,7 @@ function Api() {
         </h4>
       </div>
 
-      <div id="anchor" className="nft-image w-4/5 mx-auto ">
+      <div id="anchor" className="nft-image w-4/5 mx-auto py-20">
         <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6  md:gap-4 lg:gap-7 py-2.5 cursor-pointer">
           {data.map((nft) => {
             return (
