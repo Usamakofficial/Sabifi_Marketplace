@@ -18,7 +18,7 @@ const HiddenContent = () => {
               data-bs-toggle="collapse"
               data-bs-target="#collapseOne"
             >
-              What is HTML?
+              What is NFTs?
             </button>
           </h2>
           <div
@@ -26,7 +26,7 @@ const HiddenContent = () => {
             className="accordion-collapse collapse"
             data-bs-parent="#myAccordion"
           >
-            <div className="card-body text-lg text-white">
+            <div className="card-body text-xl text-white">
               <p>
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere
                 sit sapiente deleniti deserunt. Nihil, harum expedita. Iusto
@@ -54,7 +54,7 @@ const HiddenContent = () => {
               data-bs-toggle="collapse"
               data-bs-target="#collapseTwo"
             >
-              What is Bootstrap?
+              What is Sabifi?
             </button>
           </h2>
           <div
@@ -62,7 +62,7 @@ const HiddenContent = () => {
             className="accordion-collapse collapse show"
             data-bs-parent="#myAccordion"
           >
-            <div className="card-body text-lg text-white">
+            <div className="card-body text-xl text-white">
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum
                 est, illo eos eveniet, delectus sapiente, fuga eius fugit maxime
@@ -103,7 +103,7 @@ const HiddenContent = () => {
               data-bs-toggle="collapse"
               data-bs-target="#collapseThree"
             >
-              What is CSS?
+              What is Sabswap?
             </button>
           </h2>
           <div
@@ -111,7 +111,7 @@ const HiddenContent = () => {
             className="accordion-collapse collapse"
             data-bs-parent="#myAccordion"
           >
-            <div className="card-body text-lg text-white">
+            <div className="card-body text-xl text-white">
               <p>
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero
                 numquam consequatur rerum reiciendis recusandae cum vitae
@@ -129,10 +129,7 @@ const HiddenContent = () => {
                 for Cascading Style Sheet. CSS allows you to specify various
                 style properties for a given HTML element such as colors,
                 backgrounds, fonts etc.{" "}
-                <a
-                  href="https://www.tutorialrepublic.com/css-tutorial/"
-                  target="_blank"
-                >
+                <a href="https://www.sabifi.io/" target="_blank">
                   Learn more.
                 </a>
               </p>
