@@ -9,9 +9,11 @@ import CreateNFT from "./CreateNFT";
 // import Particle from "./Particle";
 import Api from "./Api";
 import Sliderss from "./Sliderss";
+import BigText from "./BigText";
 const Home = () => {
   return (
     <div className="min-h-screen">
+      <BigText />
       <Hero />
 
       <Api />

@@ -42,7 +42,7 @@ function Sliderss() {
     <div className="max-w-[1200px] h-[520px] w-full m-auto px-4 relative group">
       <div
         style={{ backgroundImage: `url(${slides[currentIndex].url})` }}
-        className="w-full h-full rounded-2xl bg-center  duration-500"
+        className="slider-sec w-full h-full rounded-2xl bg-center  duration-500"
       ></div>
      
       <div className="hidden group-hover:block absolute top-[50%] -translate-x-0 translate-y-[-50%] left-0 text-2xl rounded-full p-2 bg-yellow-700 border-2 border-gray-100 text-white cursor-pointer">

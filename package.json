@@ -33,6 +33,7 @@
     "react-scripts": "5.0.0",
     "react-scroll": "^1.8.8",
     "react-tsparticles": "^2.5.3",
+    "react-typed": "^1.2.0",
     "truffle-hdwallet-provider": "^1.0.17",
     "tsparticles": "^2.5.3",
     "tsparticles-engine": "^2.5.2",
