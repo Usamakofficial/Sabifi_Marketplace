@@ -8,6 +8,7 @@ import {
 } from "react-icons/fa";
 import { NavLink } from "react-router-dom";
 import sabifi from "../assets/sabifi.png";
+import TelegramIcon from '@mui/icons-material/Telegram';
 
 const Footer = () => {
   return (
@@ -141,6 +142,7 @@ const Footer = () => {
                     elit,Lorem ipsum dolor sit amet.
                   </p>
                 </div>
+           
               </div>
             </div>
             <div class="col-xl-4 col-lg-4 col-md-6 mb-30">
@@ -161,26 +163,26 @@ const Footer = () => {
                     </NavLink>
                   </li>
                   <li>
-                    <NavLink
-                      exact
-                      activeClassName="active-link"
-                      to="/about"
-                      className=" cursor-pointer 
+                  <NavLink
+                exact
+                activeClassName="active-link"
+                to="/about"
+                className=" cursor-pointer 
           "
-                    >
-                      About Us
-                    </NavLink>
+              >
+                About Us
+              </NavLink>
                   </li>
                   <li>
-                    <NavLink
-                      exact
-                      activeClassName="active-link"
-                      to="/token"
-                      className=" cursor-pointer 
+                  <NavLink
+                exact
+                activeClassName="active-link"
+                to="/token"
+                className=" cursor-pointer 
           "
-                    >
-                      Token
-                    </NavLink>
+              >
+                Token
+              </NavLink>
                   </li>
                   <li>
                     <a href="#">portfolio</a>
@@ -189,9 +191,7 @@ const Footer = () => {
                     <a href="#">Contact</a>
                   </li>
                   <li>
-                    <a href="https://swap.sabifi.io/" target="_blank">
-                      Sabswap
-                    </a>
+                    <a href="#">Sabswap</a>
                   </li>
                   <li>
                     <a href="#">Our NFTs</a>
@@ -222,12 +222,12 @@ const Footer = () => {
                 <div class="subscribe-form">
                   <form action="#">
                     <input type="text" placeholder="Email Address" />
-                    <button>
-                      <i class="fab fa-telegram-plane"></i>
+                    <button className="text-white">
+                      <TelegramIcon/>
                     </button>
                   </form>
                 </div>
-                <div class="footer-social-icon">
+                <div class="footer-social-icon py-2">
                   <span>Follow us</span>
                   <a href="#">
                     <i class="fab fa-facebook-f facebook-bg"></i>
@@ -251,9 +251,7 @@ const Footer = () => {
               <div class="copyright-text">
                 <p>
                   Copyright &copy; 2023, All Right Reserved{" "}
-                  <a href="https://swap.sabifi.io/" target="_blank">
-                    Sabifi
-                  </a>
+                  <a href="https://swap.sabifi.io/" target='_blank'>Sabifi</a>
                 </p>
               </div>
             </div>

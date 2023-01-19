@@ -9,11 +9,12 @@
     "eject": "react-scripts eject"
   },
   "dependencies": {
+    "@colisweb/rescript-react-icons-fa": "^1.0.0",
     "@emotion/react": "^11.10.5",
     "@emotion/styled": "^11.10.5",
     "@material-ui/core": "^4.12.4",
     "@material-ui/icons": "^4.11.3",
-    "@mui/icons-material": "^5.10.16",
+    "@mui/icons-material": "^5.11.0",
     "@mui/material": "^5.10.16",
     "@react-icons/all-files": "^4.1.0",
     "axios": "^1.2.1",

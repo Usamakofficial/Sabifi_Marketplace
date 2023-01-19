@@ -70,29 +70,41 @@ function Api() {
           {data.map((nft) => {
             return (
               <>
-                <div
-                  className="w-full shadow-xl rounded-2xl bg-white my-2 p-3 transform 
+                <div className="nft-upsec shadow-xl rounded-2xl ">
+                  <div
+                    className="w-full my-2 p-3 transform 
                   transition-all hover:translate-y-2 duration-300 hover:scale-[1.1]"
-                >
-                  <img
-                    src={nft.image_thumbnail_url}
-                    className="image-br h-86  w-full object-cover rounded-lg mb-3 "
-                  />
-                  <h2 className="text-black font-bold mt-4 mb-3 w-28 overflow-hidden h-5 float-left">
-                    {nft.name}
-                  </h2>
-                  <button
-                    className="btn shadow-lg text-white text-sm
-                   cursor-pointer rounded-full px-3 py-1 float-right  mt-4 mb-3"
                   >
-                    <a href={nft.permalink} target="_blank">
-                      View on OpenSea
-                    </a>
-                  </button>
-                  <div className="mt-20">
-                    <p className=" text-gray-400 h-16 overflow-hidden text-sm">
-                      {nft.description}
-                    </p>
+                    <img
+                      src={nft.image_thumbnail_url}
+                      className="image-br h-86  w-full object-cover rounded-lg "
+                    />
+                  </div>
+                  <div className="nft-sec shadow-xl">
+                    <div className="py-2 px-2">
+                      <button
+                        className="btn shadow-lg text-white text-sm
+                   cursor-pointer rounded-full"
+                      >
+                        <a href={nft.permalink} target="_blank">
+                          View on Opensea
+                        </a>
+                      </button>
+                    </div>
+                    <div className="px-2 head- text-white">
+                      <h2 className=" font-bold overflow-hidden ">
+                        {nft.name}
+                      </h2>
+                    </div>
+
+                    <div className="py-2 px-2">
+                      <p className=" h-16 overflow-hidden text-sm">
+                        <span className="text-gradient">
+                          {" "}
+                          {nft.description}
+                        </span>
+                      </p>
+                    </div>
                   </div>
                 </div>
               </>

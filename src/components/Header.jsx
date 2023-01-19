@@ -55,7 +55,7 @@ const Header = () => {
  cursor-pointer font-bold"
             >
               <a href="https://swap.sabifi.io/" target="_blank">
-                Launch App
+                Sabswap
               </a>
             </button>
             <div className="nav text-lg gap-3 py-2 ">

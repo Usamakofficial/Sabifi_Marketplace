@@ -5,6 +5,9 @@ import policon from "../assets/policon.png";
 import cmcicon from "../assets/cmcicon.png";
 import Artboard from "../assets/artboard.png";
 import ArrowOutwardIcon from "@mui/icons-material/ArrowOutward";
+import Accordion from "../components/Accordion";
+import HiddenContent from "../components/Accordion";
+import Features from "./Features";
 // import Particle from "./Particle";
 const Token = () => {
   return (
@@ -41,8 +44,9 @@ const Token = () => {
           <img src={token_img} alt="NFT Art" className="token-img w-full" />
         </div>
       </div>
+      <Features/>
       <div className="flex flex-col py-16 text-center w-full">
-      <h1 className="token-head text-6xl font-bold  tracking-normal">
+        <h1 className="token-head text-6xl font-bold  tracking-normal">
           Find Us
         </h1>
         <hr className="hr-line mx-auto w-36 shadow-xl h-2  rounded border-0 md:my-4 "></hr>
@@ -135,7 +139,17 @@ const Token = () => {
           </div>
         </div>
       </div>
+      <div
+        className="flex flex-col md:flex-row w-4/5 justify-between 
+    items-center mx-auto py-5"
+      ></div>
       {/* <Particle /> */}
+      <div
+        className=" md:flex-row w-4/5
+    items-center mx-auto"
+      >
+        <HiddenContent />
+      </div>
     </>
   );
 };

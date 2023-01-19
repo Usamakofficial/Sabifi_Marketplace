@@ -8,10 +8,13 @@ import Artworks from "./Artworks";
 import CreateNFT from "./CreateNFT";
 // import Particle from "./Particle";
 import Api from "./Api";
+import Sliderss from "./Sliderss";
 const Home = () => {
   return (
     <div className="min-h-screen">
+      <Sliderss />
       <Hero />
+
       <Api />
       <Artworks />
       <Transactions />
