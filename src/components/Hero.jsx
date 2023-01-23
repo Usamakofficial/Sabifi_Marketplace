@@ -12,7 +12,7 @@ const Hero = () => {
     <section id="hero-section">
     <div
       className="hero_head flex flex-col md:flex-row w-4/5 justify-between 
-      items-center mx-auto py-14"
+      items-center mx-auto py-16"
     >
       <div className="md:w-3/6 w-full">
         <div className="head-size">

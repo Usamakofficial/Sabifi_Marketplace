@@ -8,7 +8,7 @@ import {
 } from "react-icons/fa";
 import { NavLink } from "react-router-dom";
 import sabifi from "../assets/sabifi.png";
-import TelegramIcon from '@mui/icons-material/Telegram';
+import TelegramIcon from "@mui/icons-material/Telegram";
 
 const Footer = () => {
   return (
@@ -137,12 +137,9 @@ const Footer = () => {
                 </div>
                 <div class="footer-text">
                   <p>
-                    Lorem ipsum dolor sit amet, consec tetur adipisicing elit,
-                    sed do eiusmod tempor incididuntut consec tetur adipisicing
-                    elit,Lorem ipsum dolor sit amet.
+                    Sabifi is a cutting-edge NFT marketplace that allows users to buy and sell unique digital assets such as art, collectibles and more. It is built on the Ethereum blockchain, which ensures that all transactions are secure, transparent and verifiable. It's easy to use interface, makes buying and selling NFTs accessible to everyone. Sabifi also supports all ERC-721 standard tokens.
                   </p>
                 </div>
-           
               </div>
             </div>
             <div class="col-xl-4 col-lg-4 col-md-6 mb-30">
@@ -163,26 +160,26 @@ const Footer = () => {
                     </NavLink>
                   </li>
                   <li>
-                  <NavLink
-                exact
-                activeClassName="active-link"
-                to="/about"
-                className=" cursor-pointer 
+                    <NavLink
+                      exact
+                      activeClassName="active-link"
+                      to="/about"
+                      className=" cursor-pointer 
           "
-              >
-                About Us
-              </NavLink>
+                    >
+                      About Us
+                    </NavLink>
                   </li>
                   <li>
-                  <NavLink
-                exact
-                activeClassName="active-link"
-                to="/token"
-                className=" cursor-pointer 
+                    <NavLink
+                      exact
+                      activeClassName="active-link"
+                      to="/token"
+                      className=" cursor-pointer 
           "
-              >
-                Token
-              </NavLink>
+                    >
+                      Token
+                    </NavLink>
                   </li>
                   <li>
                     <a href="#">portfolio</a>
@@ -191,10 +188,10 @@ const Footer = () => {
                     <a href="#">Contact</a>
                   </li>
                   <li>
-                    <a href="#">Sabswap</a>
+                    <a href="https://swap.sabifi.io/#/swap" target="_blank">Sabswap</a>
                   </li>
                   <li>
-                    <a href="#">Our NFTs</a>
+                    <a href="https://opensea.io/Wahhab_Mirza" target="_blank">Our NFTs</a>
                   </li>
                   <li>
                     <a href="#">Expert Team</a>
@@ -223,20 +220,20 @@ const Footer = () => {
                   <form action="#">
                     <input type="text" placeholder="Email Address" />
                     <button className="text-white">
-                      <TelegramIcon/>
+                      <TelegramIcon />
                     </button>
                   </form>
                 </div>
                 <div class="footer-social-icon py-2">
                   <span>Follow us</span>
-                  <a href="#">
+                  <a href="">
                     <i class="fab fa-facebook-f facebook-bg"></i>
                   </a>
-                  <a href="#">
+                  <a href="https://twitter.com/sabifi5" target="_blank">
                     <i class="fab fa-twitter twitter-bg"></i>
                   </a>
-                  <a href="#">
-                    <i class="fab fa-google-plus-g google-bg"></i>
+                  <a href="https://pk.linkedin.com/in/sbf-028596258?trk=public_post_feed-actor-name" target="_blank">
+                  <i class="fa-brands fa-linkedin-in google-bg"></i>
                   </a>
                 </div>
               </div>
@@ -251,7 +248,9 @@ const Footer = () => {
               <div class="copyright-text">
                 <p>
                   Copyright &copy; 2023, All Right Reserved{" "}
-                  <a href="https://swap.sabifi.io/" target='_blank'>Sabifi</a>
+                  <a href="https://swap.sabifi.io/" target="_blank">
+                    Sabifi
+                  </a>
                 </p>
               </div>
             </div>

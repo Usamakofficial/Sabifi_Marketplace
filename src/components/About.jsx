@@ -9,7 +9,7 @@ const About = () => {
   return (
     <>
       <div className="container mx-auto">
-      <div className="flex flex-col py-4 text-center w-full mb-8">
+      <div className="head-size flex flex-col py-4 text-center w-full mb-8">
         <h1 className="token-head text-5xl font-bold   tracking-normal">
           Creator
         </h1>
@@ -19,8 +19,8 @@ const About = () => {
           className="flex flex-col md:flex-row w-4/5 justify-between 
     items-center mx-auto"
         >
-          <div className="md:w-3/6 w-full">
-            <div>
+          <div className="head-size md:w-3/6 w-full">
+            <div className="para-head">
               <h1 className="text-white leading-tight text-6xl font-bold">
                 WAHHAB MIRZA <br />
                 CEO, Founder <br />
@@ -28,8 +28,6 @@ const About = () => {
               </h1>
               <p className="text-gradient font-semibold text-lg mt-3">
                 Our team of finance & Technology experts have joined
-              </p>
-              <p className="text-gradient font-semibold text-lg">
                 to turn your simple wallets into crypto wallets through SABIFI.
               </p>
             </div>
@@ -41,7 +39,7 @@ const About = () => {
             <img src={ceo} alt="our ceo" className="token-img w-full" />
           </div>
         </div>
-        <div className="flex flex-col py-4 text-center w-full mb-8">
+        <div className="head-size flex flex-col py-4 text-center w-full">
         <h1 className="token-head text-5xl font-bold   tracking-normal">
           Our Team
         </h1>
@@ -52,8 +50,8 @@ const About = () => {
             className=" flex xl gap-20 flex-col md:flex-row w-4/5 justify-between 
     items-center mx-auto py-10"
           >
-            <div className="bg-white/10 p-8 hover:shadow-lg rounded-3xl">
-              <img className="rounded-full h-60 mx-auto" src={usama} alt="" />
+            <div className="team-sec bg-white/10 p-8 hover:shadow-lg rounded-3xl">
+              <img className="rounded-full h-52 mx-auto" src={usama} alt="" />
               <h4 className="upperclass text-xl font-bold mt-6">Usama Anwar</h4>
               <p className="mt-4 text-gray-700">
                 Mr. Usama Anwar is a well respected Blockchain developer and
@@ -70,9 +68,9 @@ const About = () => {
                 </a>
               </button>
             </div>
-            <div className="bg-white/10 hover:shadow-lg p-8 rounded-3xl">
+            <div className="team-sec bg-white/10 hover:shadow-lg p-8 rounded-3xl">
               <img
-                className="rounded-full h-60 mx-auto"
+                className="rounded-full h-52 mx-auto"
                 src={mubashar}
                 alt=""
               />
@@ -93,8 +91,8 @@ const About = () => {
                 </a>
               </button>
             </div>
-            <div className="bg-white/10 hover:shadow-lg p-8 rounded-3xl">
-              <img className="rounded-full h-60 mx-auto" src={ali} alt="" />
+            <div className="team-sec bg-white/10 hover:shadow-lg p-8 rounded-3xl">
+              <img className="rounded-full h-52 mx-auto" src={ali} alt="" />
               <h4 className="upperclass text-xl font-bold mt-6">
                 Muhammad Ali
               </h4>

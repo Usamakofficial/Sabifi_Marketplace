@@ -48,7 +48,7 @@ function Api() {
   return (
     <>
       <section id="Api-section">
-        <div className="flex justify-center py-24">
+        <div className="flex justify-center py-16">
           <Link to="anchor" spy={true} smooth={true} duration={700}>
             <button
               onClick={connect}
@@ -59,14 +59,16 @@ function Api() {
           </Link>
         </div>
         <div className="container w-4/5 mx-auto">
-          <h4 className=" text-white text-3xl font-bold uppercase text-gradient">
-            {data.length > 0
-              ? "Our Featured NFTs on OpenSea"
-              : "Click to see Featured NFTs of Sabifi"}
-          </h4>
+          <div className="nfts-section">
+            <h4 className=" text-white text-3xl font-bold uppercase text-gradient">
+              {data.length > 0
+                ? "Our Featured NFTs on OpenSea"
+                : "Click to see Featured NFTs of Sabifi"}
+            </h4>
+          </div>
         </div>
 
-        <div id="anchor" className="nft-image w-4/5 mx-auto py-20">
+        <div id="anchor" className="nft-image w-4/5 mx-auto py-6">
           <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6  md:gap-4 lg:gap-7 py-2.5 cursor-pointer">
             {data.map((nft) => {
               return (

@@ -1,129 +1,108 @@
-import timelessLogo from "../assets/sabifi.png";
-
+import React, { useState } from "react";
 import { connectWallet } from "../Blockchain.Services";
 import { useGlobalState, truncate } from "../store";
 import { NavLink } from "react-router-dom";
+import timelessLogo from "../assets/sabifi.png";
 import Whitepaper from "./Whitepaper";
-import MenuIcon from "@mui/icons-material/Menu";
-import { useState } from "react";
-import CloseIcon from "@mui/icons-material/Close";
+import "./NavBar.css";
 
-const Header = () => {
+function NavBar() {
+  const [click, setClick] = useState(false);
   const [connectedAccount] = useGlobalState("connectedAccount");
-  const [showIcons, setShowIcons] = useState(false);
-  const [open, setOpen] = useState(false);
-  const handleClickAway = () => {
-    setOpen(false);
-    console.log("clicked away");
-  };
-  const handleClick = () => {
-    setOpen(!open);
-    console.log("clicked");
-  };
-  const [isOpen, setIsOpen] = useState(false);
-
-  const toggleMenu = () => setIsOpen(!isOpen);
+  const handleClick = () => setClick(!click);
   return (
     <>
-      <div className="container py-10">
-        <nav className="navbar flex col-xl-4 col-lg-4 col-md-6 w-4/5 gap-10 items-center mx-auto navbar-expand-lg">
-          <div className=" md:flex-[0.5] flex-initial mt-3">
-            <NavLink exact activeClassName="active_class" to="/">
-              <div className="logo-image">
-              <img
-                className=" w-64 cursor-pointer"
-                src={timelessLogo}
-                alt="Timeless Logo"
-              /></div>
-            </NavLink>
+      <nav className="navbar">
+        <div className="nav-container">
+          <NavLink exact ClassName="nav-logo" to="/">
+            <img
+              className="w-36 cursor-pointer"
+              src={timelessLogo}
+              alt="Timeless Logo"
+            />
+          </NavLink>
 
-          </div>
-          <button
-        className="navbar-toggler"
-        type="button"
-        onClick={toggleMenu}
-        aria-controls="navbarSupportedContent"
-        aria-expanded={isOpen}
-        aria-label="Toggle navigation"
-      >
-        <span className="navbar-toggler-icon"><MenuIcon className=""/></span>
-      </button>
-
-      <div
-        className={`nav-bar collapse navbar-collapse justify-around ${
-          isOpen ? 'show' : ''
-        }`}
-        id="navbarSupportedContent"
-      >
-            <button
-              class="btn shadow-xl text-white md:text-l p-2
+          <ul className={click ? "nav-menu active" : "nav-menu" }>
+            <div className="">
+              <li className="nav-item">
+                <button
+                  class="btn shadow-xl text-white md:text-l 
  cursor-pointer font-bold"
-            >
-              <a href="https://swap.sabifi.io/" target="_blank">
-                Sabswap
-              </a>
-            </button>
-            <div className="nav text-lg gap-3 py-2 ">
+                >
+                  <a href="https://swap.sabifi.io/" target="_blank">
+                    Sabswap
+                  </a>
+                </button>
+              </li>
+            </div>
+            <li className="nav-item">
               <NavLink
                 exact
                 activeClassName="active-link"
                 to="/"
-                className=" cursor-pointer font-bold
-          "onClick={toggleMenu}
+                className="
+          "
+                onClick={handleClick}
               >
                 Marketplace
               </NavLink>
+            </li>
+            <li className="nav-item">
               <NavLink
                 exact
                 activeClassName="active-link"
                 to="/token"
-                className=" cursor-pointer font-bold
-          "onClick={toggleMenu}
+                className="
+          "
+                onClick={handleClick}
               >
                 Our Token
               </NavLink>
+            </li>
+            <li className="nav-item">
               <NavLink
                 exact
                 activeClassName="active-link"
                 to="/about"
-                className=" cursor-pointer  font-bold
-          "onClick={toggleMenu}
+                className="
+          "
+                onClick={handleClick}
               >
                 About Us
               </NavLink>
-
-              <div className=" cursor-pointer font-bold">
+            </li>
+            <li className="nav-item">
+              <div className="">
                 <Whitepaper />
               </div>
-            </div>
-          </div>
-
-          <div className="md:flex-[0.5] flex justify-center">
-            {connectedAccount ? (
-              <button
-                className="btn shadow-xl text-white
-                px-2
-                py-2
+            </li>
+            <div className="md:flex-[0.5]">
+              <li className="nav-item">
+                {connectedAccount ? (
+                  <button
+                    className="btn shadow-xl text-white
    cursor-pointer"
-              >
-                {truncate(connectedAccount, 4, 4, 11)}
-              </button>
-            ) : (
-              <button
-                className="btn shadow-xl text-white
-               px-2
-               py-2
-          rounded-full cursor-pointer"
-                onClick={connectWallet}
-              >
-                Connect Wallet
-              </button>
-            )}
+                  >
+                    {truncate(connectedAccount, 4, 4, 11)}
+                  </button>
+                ) : (
+                  <button
+                    className="btn shadow-xl text-white cursor-pointer"
+                    onClick={connectWallet}
+                  >
+                    Connect
+                  </button>
+                )}
+              </li>
+            </div>
+          </ul>
+          <div className="nav-icon" onClick={handleClick}>
+            <i className={click ? "fas fa-times" : "fas fa-bars"}></i>
           </div>
-        </nav>
-      </div>
+        </div>
+      </nav>
     </>
   );
-};
+}
 
-export default Header;
+export default NavBar;
